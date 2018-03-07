@@ -1,0 +1,132 @@
+﻿
+
+#mainCarousel .carousel-inner > .item > img {
+    width:100%; height:600px;
+}
+#mainCarousel .carousel-inner > .item:before {
+    content:'';
+    position: absolute;
+    width:100%; 
+    height:100%;
+    top:0; 
+    left:0;    
+    background:rgba(0,0,0,0.3);
+}
+.navbar {   
+    z-index:10;
+    background:rgba(0,0,0,0.3);
+    width:100%;
+    height:90px;
+     border:none;    
+    /*border-bottom:1px solid #FDE906;*/
+    /*border-bottom: solid 5px rgb(254, 250, 77); opacity: 1;*/
+}
+
+
+.navbar li a {
+  padding-left:30px;
+  margin-top:30px;
+  color:white;
+  font-weight:bold; 
+}
+.navbar .navbar-header .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+/*.navbar li.active a:before {
+    content: '▼';
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 20px;
+    color: #FDE906;
+    font-size: 13px;
+    transform: scale(2,1);
+    -webkit-transform: scale(2,1);
+    -moz-transform: scale(2,1);
+    -ms-transform: scale(2,1);
+    -o-transform: scale(2,1);
+}*/
+
+
+
+carousel .item {
+display: none;
+position: relative;
+-webkit-transition:.7s ease-in-out opacity;
+-moz-transition: .7s ease-in-out opacity;
+-ms-transition: .7s ease-in-out opacity;
+-o-transition: .7s ease-in-out opacity;
+transition: .7s ease-in-out opacity;
+left: 0 !important;
+transition: 0.6s ease-in-out left; 
+}
+
+.carousel .next.left,
+.carousel .prev.right {
+opacity: 1;
+z-index: 1;
+}
+
+.carousel .active.left {
+opacity: 0;
+z-index: 2; 
+}
+
+.carousel .active.right {
+opacity: 0;
+z-index: 2;
+}
+
+.parallelogram {
+	width: 60%;
+	height: 90%;
+   
+	-webkit-transform: skew(170deg);
+	   -moz-transform: skew(170deg);
+	     -o-transform: skew(170deg);
+	background:rgba(0,0,0,0.6);
+   
+  filter: alpha(opacity=40); 
+  position:absolute;
+  top:95px;
+  z-index:101;
+  left:-20%;
+    
+}
+.item_box{
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+    float:left; width:95%; padding:10px; border:1px solid #dddddd; margin:10px; height:300px;
+}
+ .toggleHeading {
+        animation-delay: 0.5s;
+      -webkit-animation-delay: 0.5s;
+         -moz-animation-delay: 0.5s;
+           -o-animation-delay: 0.5s;
+           -moz-transition: none !important;
+    }
+
+    .toggleCaption {
+        animation-delay: 1.5s;
+      -webkit-animation-delay: 1.5s;
+         -moz-animation-delay: 1.5s;
+           -o-animation-delay: 1.5s;
+           -moz-transition: none !important;
+    }
+.main-text
+{
+    position: absolute;
+    top: 20%;
+    width:100%;        
+    color: #FFF;
+}
+.carousel-caption {
+    top: 40%;
+    left:20%;   
+}
+#success_message{ display: none;}
